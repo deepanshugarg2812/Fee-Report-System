@@ -13,10 +13,10 @@ System has been secured with authentiction system and user data is securely stor
 Session has been added to system for making it more user friendly
 
 ##Technology
+```
 -: Java
 -: Servlet
 -: JSP
 -: SQL
 -: Server used - wildfly 21
-
-![alt text](https://screenbud.com/shot/d87c2a7c-b86c-40e8-979b-0227eab0d85e)
+```
