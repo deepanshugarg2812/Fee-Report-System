@@ -10,9 +10,10 @@
 -Accountant can add new students, update and delete the old students.
 
 ## Authentication
+```
 -System has been secured with authentiction system and user data is securely stored in the database.
 -Session has been added to system for making it more user friendly
-
+```
 ## Technology
 ```
 -: Java
