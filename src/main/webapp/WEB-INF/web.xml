@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>FeeManagement</display-name>
+  
+  <listener>
+  	<listener-class>com.listeners.DbObjectCreation</listener-class>
+  </listener>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+  	<param-name>connectionstring</param-name>
+  	<param-value>jdbc:mysql://localhost:3306/FeeManagement</param-value>	
+  </context-param>
+  
+  <context-param>
+  	<param-name>username</param-name>
+  	<param-value>root</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>password</param-name>
+  	<param-value>DeepGar2812#*</param-value>
+  </context-param>
+  
+  <servlet>
+  	<servlet-name>loginAdmin</servlet-name>
+  	<servlet-class>com.logins.AdminLogin</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>loginAdmin</servlet-name>
+  	<url-pattern>/loginadmin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>loginAccountant</servlet-name>
+  	<servlet-class>com.logins.AccountantLogin</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>loginAccountant</servlet-name>
+  	<url-pattern>/loginaccountant</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>logoutUsers</servlet-name>
+  	<servlet-class>com.logins.LogoutUsers</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>logoutUsers</servlet-name>
+  	<url-pattern>/logoutusers</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>addAccountant</servlet-name>
+  	<servlet-class>com.main.AddAccountant</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>addAccountant</servlet-name>
+  	<url-pattern>/addaccountant</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>addStudent</servlet-name>
+  	<servlet-class>com.main.AddStudent</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>addStudent</servlet-name>
+  	<url-pattern>/addstudent</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>viewStudents</servlet-name>
+  	<servlet-class>com.main.ViewStudents</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>viewStudents</servlet-name>
+  	<url-pattern>/viewstudents</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>deleteStudent</servlet-name>
+  	<servlet-class>com.main.DeleteStudent</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>deleteStudent</servlet-name>
+  	<url-pattern>/deletestudent</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>updateStudent</servlet-name>
+  	<servlet-class>com.main.UpdateStudent</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>updateStudent</servlet-name>
+  	<url-pattern>/updatestudent</url-pattern>
+  </servlet-mapping>
+</web-app>
